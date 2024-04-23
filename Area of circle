@@ -1,0 +1,19 @@
+## find the area of circle for given radius##
+
+from math import*
+r=int(input('enter radius of circle : '))
+print('area of the circle is: ',pi*pow(r,2))
+
+or
+
+
+from math import*
+r=int(input('enter radius of circle : '))
+print('area of the circle is: ',pi*r*r)
+
+
+
+output:
+
+enter radius of circle : 4
+area of the circle is:  50.26548245743669

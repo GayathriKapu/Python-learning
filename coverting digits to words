@@ -1,0 +1,25 @@
+words_up_to_19=['','one','two','three','four','five','six','seven','eight','nine','te','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen']
+words_in_tens=[' ',' ','twenty','thirty','fourty','fifty','sixty','seventy','eighty','ninety']
+n=int(input('enter numbers from 0-99: '))
+output= ' '
+if n==0:
+    output='zero'
+elif n<=19:
+    output = words_up_to_19[n]
+elif n<=99:
+    output=words_in_tens[n//10]+" "+words_up_to_19[n%10]
+else:
+    output="please enter value in range of 0-99!!!"
+print(output)
+
+output 1:
+enter numbers from 0-99: 0
+zero
+
+output 2:
+enter numbers from 0-99: 14
+fourteen
+
+output 3:
+enter numbers from 0-99: 48
+fourty eight
